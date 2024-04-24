@@ -1,0 +1,14 @@
+
+- name: loops
+  hosts: web
+  become: yes
+  tasks:
+    - name: list of loops
+      ansible.builtin.package
+        name: "{{items}}"
+        state: present
+      loops:
+        - git
+        - nginx
+        - postfix
+
