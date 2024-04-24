@@ -4,11 +4,11 @@
   vars_files:
     - variables.yaml
   vars_prompt:
-    - name: enter the user name "{{USERNAME}}""
-      prompt: "{{USERNAME}}"
+    - name: enter the user name
+      prompt: "{{USER}}"
       private: false
-    - name: password "{{PASSWORD}}"
-      prompt: "{{PASSWORD}}" 
+    - name: password
+      prompt: "{{PASS}}" 
       private: false
   tasks:
     - name: checking the variables
