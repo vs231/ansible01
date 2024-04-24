@@ -1,6 +1,7 @@
-- name: USERNAME
-  prompt: please enter your USERNAME
-  private: false
-- name: PASSWORD
-  prompt: Please enter your PASSWORD
-  private: true
+vars_prompt:
+    - name: enter the user name
+      prompt: "{{USERNAME}}"
+      private: false
+    - name: password
+      prompt: "{{PASSWORD}}"
+      private: true

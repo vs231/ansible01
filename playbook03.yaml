@@ -4,12 +4,7 @@
   vars_files:
     - variables.yaml
   vars_prompt:
-    - name: enter the user name
-      prompt: "{{USERNAME}}"
-      private: false
-    - name: password
-      prompt: "{{PASSWORD}}"
-      private: true
+    - variablesprompt.yaml
   tasks:
     - name: checking the variables
       ansible.builtin.debug:
