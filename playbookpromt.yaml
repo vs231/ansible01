@@ -11,6 +11,6 @@
     prompt: Please enter your PASSWORD
     private: true
   tasks:
-  - name: check the values
+  - name: print and check the values
     ansible.builtin.debug:
-      msg: "USERNAME is: {{USERNAME}} , PASSWORD is: {{PASSSWORD}}"
+      msg: "username is: {{USERNAME}}, Password is: {{PASSWORD}}"
