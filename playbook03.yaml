@@ -5,10 +5,10 @@
     - variables.yaml
   vars_prompt:
     - name: enter the user name
-      prompt: "{{USER}}"
+      prompt: "{{USERNAME}}"
       private: false
     - name: password
-      prompt: "{{PASS}}" 
+      prompt: "{{PASSWORD}}" 
       private: false
   tasks:
     - name: checking the variables
