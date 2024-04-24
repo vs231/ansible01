@@ -1,0 +1,16 @@
+- name: checking the variables
+  hosts: web
+  become: yes
+  vars_files:
+    - variables.yaml
+  vars_prompt:
+    - name: enter the user name
+      prompt: "{{USERNAME}}"
+      private: false
+    - name: password
+      prompt: "{{PASS}}"
+      private: true
+  tasks:
+    - name: checking the variables
+      ansible.builtin.debug:
+        msg: "username is {{USERNAME}} , password is {{PASSWORD}}"
