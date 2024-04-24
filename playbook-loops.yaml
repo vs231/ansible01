@@ -2,12 +2,12 @@
   hosts: web
   become: yes
   tasks:
-  - name: list of items
-    ansible.builtin.package:
-      name: "{{item}}"
-      state: present
-    loops:
-      - git
-      - mysql
-      - postfix 
+    - name: print persons
+      ansible.builtin.package:
+          name: "{{item}}"
+          state: present
+      loops:
+          - git
+          - mysql
+          - postfix 
 
