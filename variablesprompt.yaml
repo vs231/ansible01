@@ -1,6 +1,6 @@
-- name: USERNAME
+ name: USERNAME
   prompt: please enter your USERNAME
   private: false
-- name: PASSWORD
+ name: PASSWORD
   prompt: Please enter your PASSWORD
   private: true
