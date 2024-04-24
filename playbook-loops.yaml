@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   tasks:
-  - name: list of loops
+  - name: list of items
     ansible.builtin.package:
       name: "{{items}}"
       state: present
