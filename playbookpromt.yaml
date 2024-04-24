@@ -1,6 +1,8 @@
 - name: checking ofr variables
   hosts: localhost
   become: yes
+  vars_files:
+    - variables.yaml
   vars_prompt:
    - name: USERNAME
      prompt: please enter your USERNAME
@@ -9,6 +11,6 @@
      prompt: Please enter your PASSWORD
      private: true
   tasks:
-   - name: check the values
-     anisble.builtin.debug:
+  - name: check the values
+    anisble.builtin.debug:
       msg: "USERNAME is: {{USERNAME}} , PASSWORD is: {{PASSSWORD}}"
