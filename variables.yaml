@@ -1,6 +1,6 @@
 
-USERNAME: Enter your username
-PASSWORD: Enter your password
+USERNAME: Enter your username "{{USERNAME}}"
+PASSWORD: Enter your password "{{PASSWORD}}"
 
 vars_prompt:
     - name: enter the user name

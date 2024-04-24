@@ -3,8 +3,6 @@
   become: yes
   vars_files:
     - variables.yaml
-  vars_prompt:
-    - variablesprompt.yaml
   tasks:
     - name: checking the variables
       ansible.builtin.debug:
