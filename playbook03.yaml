@@ -8,7 +8,7 @@
       prompt: "{{USERNAME}}"
       private: false
     - name: password
-      prompt: "{{PASS}}"
+      prompt: "{{PASSWORD}}"
       private: true
   tasks:
     - name: checking the variables
