@@ -1,0 +1,10 @@
+- name: checking ofr variables
+  hosts: localhost
+  vars_files:
+    - variables.yaml
+  vars_prompt:
+    - variablesprompt.yaml
+  tasks:
+    - name: check the values
+      anisble.builtin.debug:
+        msg: "USERNAME is: {{USERNAME}} , PASSWORD is: {{PASSSWORD}}"
