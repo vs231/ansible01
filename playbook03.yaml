@@ -9,8 +9,8 @@
       private: false
     - name: password
       prompt: "{{PASSWORD}}"
-      private: true
+      private: false
   tasks:
     - name: checking the variables
       ansible.builtin.debug:
-        msg: "username is {{user}} , password is {{pass}}"
+        msg: "username is {{USERNAME}} , password is {{PASSWORD}}"
