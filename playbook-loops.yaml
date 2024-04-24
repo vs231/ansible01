@@ -4,7 +4,7 @@
   tasks:
   - name: list of items
     ansible.builtin.package:
-      name: "{{items}}"
+      name: "{{item}}"
       state: present
     loops:
       - git
